@@ -1,0 +1,25 @@
+Constraints
+1- stack fits in memory
+2- integers [1,1000]; positive or negative?
+3- Implements push, pop
+Ideas
+
+1- Use Linked List to store the stack
+- Pop: get head pf the list
+- Push: puts an element in the head of the list
+- Size: keeps the number of elements on the list
+-1 for pop
++1 for push
+- Max operation: Look for the maximum value using pop and storing elements in an array of the size of the stack, then reconsstructs the stack from the array
+
+*Complexity
+Time - 2n + O(1) => O(n)
+Space - O(n)
+
+Test Cases
+
+1- []
+2- [1]
+3 - [3, 4]
+4 - [1,2,3,4,5,6,7]
+5 - [7,6,5,4,3,2,1]
